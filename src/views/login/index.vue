@@ -122,13 +122,19 @@ export default {
         this.$refs.password.focus();
       });
     },
+    // 登陆业务:发请求,携带用户名和密码给服务器验证(成功与失败)
     handleLogin() {
+      // 验证表单元素是否符合规则
       this.$refs.loginForm.validate((valid) => {
+        // 如果符合规则
         if (valid) {
+          // loading开始
           this.loading = true;
+          // 派发一个action:user/login,用户名与密码载荷
           this.$store
             .dispatch("user/login", this.loginForm)
             .then(() => {
+              // 登陆成功跳转路由
               this.$router.push({ path: this.redirect || "/" });
               this.loading = false;
             })
