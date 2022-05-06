@@ -11,7 +11,7 @@
       <div class="title-container">
         <h3 class="title">后台管理系统</h3>
       </div>
-
+      <!-- 用户输入 -->
       <el-form-item prop="username">
         <span class="svg-container">
           <svg-icon icon-class="user" />
@@ -26,7 +26,7 @@
           auto-complete="on"
         />
       </el-form-item>
-
+      <!-- 密码输入 -->
       <el-form-item prop="password">
         <span class="svg-container">
           <svg-icon icon-class="password" />
@@ -48,7 +48,7 @@
           />
         </span>
       </el-form-item>
-
+      <!-- 登陆按钮 -->
       <el-button
         :loading="loading"
         type="primary"
@@ -56,7 +56,7 @@
         @click.native.prevent="handleLogin"
         >登陆</el-button
       >
-
+      <!-- 密码提示 -->
       <div class="tips">
         <span style="margin-right: 20px">默认用户: admin</span>
         <span> 密码: any</span>

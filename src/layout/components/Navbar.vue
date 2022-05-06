@@ -18,15 +18,12 @@
           <router-link to="/">
             <el-dropdown-item> 主页 </el-dropdown-item>
           </router-link>
-          <a
-            target="_blank"
-            href="https://github.com/PanJiaChen/vue-admin-template/"
-          >
+          <a target="_blank" href="https://github.com/MartinOvO/vue-mange/">
             <el-dropdown-item>Github</el-dropdown-item>
           </a>
           <a
             target="_blank"
-            href="https://panjiachen.github.io/vue-element-admin-site/#/"
+            href="https://github.com/MartinOvO/vue-mange/blob/main/README-zh.md"
           >
             <el-dropdown-item>文档</el-dropdown-item>
           </a>
